@@ -12,7 +12,7 @@ def load_model():
     model = torch.hub.load(
         'ultralytics/yolov5', 
         'custom', 
-        path='/raid/home/rajivratn/avinash/Raj/best.pt'
+        path='best.pt'
     )
     return model
 model = load_model()
