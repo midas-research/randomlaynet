@@ -23,7 +23,32 @@
 
 ## METHODOLOGY FOR RANLAYNET DATASET GENERATION 
 
-![MarineGEO circle logo](/assets/img/MarineGEO_logo.png "MarineGEO logo")
+## RESULTS [ Inference on unseen DocLayNet Dataset ] 
+* Yolo-v8 pretrained on PubLayNet as source-dataset
+* Further fine-tuned on RanLayNet - our synthetic noisy dataset 
+* Significantly enhances model performance across various metrics in different target domains.
+* The performance stays consistent across various domains, thus leading to efficient domain adaptation
+
+## RESULTS [ Inference on unseen DocLayNet Dataset ] 
+* Yolo-v8 pretrained on IIIT-AR-13K as source-dataset
+* Further fine-tuned on RanLayNet - our synthetic noisy dataset 
+* Significantly enhances model performance across various metrics in different target domains.
+* The performance stays consistent across various domains, thus leading to efficient domain adaptation
+
+## CONCLUSIONS : 
+
+* Proposed "RanLayNet" as an innovative and unbiased dataset creation approach. 
+* Dynamic and adaptable, designed without a predetermined layout structure. 
+* Leveraged RanLayNet and a generality paradigm to revolutionize domain adaptation strategies.
+* Holds promise for groundbreaking results and contributes significantly to advancing the field of domain adaptation in a dynamic and evolving data landscape.
+
+## FUTURE SCOPE
+* The current implementation, with five labels, demonstrates promising adaptability on the target domain. 
+* Our trajectory involves a progressive evolution, intending to introduce diverse patches on our canvas. 
+* This expansion aims to enable seamless generalization across a broader spectrum of domains, even without explicit label generation for both the source and target datasets.
+
+
+
 
 
 
