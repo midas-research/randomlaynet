@@ -7,7 +7,7 @@
 * Developed domain adaptation for layout identification using limited labeled data, improving a deep model trained on RanLayNet compared to models using only real documents.
 
 ## MOTIVATION AND CHALLENGES
-* The limited diversity of layouts in Public datasets [1] [2]  necessitates many annotated instances.
+* The limited diversity of layouts in Public datasets necessitates many annotated instances.
 * Annotating enough instances for training is costly and time-consuming.
 * Differences between source (training data) and target (real-world application) domains can greatly affect model performance.
 
