@@ -22,7 +22,7 @@
 * RanLayNet's versatility enables training models for diverse layouts, effectively handling domain shifts in document structures. Models trained on RanLayNet outperform PublayNet models, showcasing robustness and adaptability to various layouts, reinforcing domain adaptation.
 
 ## METHODOLOGY FOR RANLAYNET DATASET GENERATION 
-![Nature Image](https://marinegeo.github.io/assets/img/MarineGEO_logo.png)
+![Nature Image](images/methodology.png)
 
 ## RESULTS [ Inference on unseen DocLayNet Dataset ] 
 * Yolo-v8 pretrained on PubLayNet as source-dataset
