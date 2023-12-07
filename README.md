@@ -24,14 +24,14 @@
 ## METHODOLOGY FOR RANLAYNET DATASET GENERATION 
 ![Methodology](images/methodology.png)
 
-## RESULTS [ Inference on unseen DocLayNet Dataset ] 
+## RESULTS - Part 1 [ Inference on unseen DocLayNet Dataset using PubLayNet + RanLayNet ] 
 ![Inference_1](images/Results_1.png)
 * Yolo-v8 pretrained on PubLayNet as source-dataset
 * Further fine-tuned on RanLayNet - our synthetic noisy dataset 
 * Significantly enhances model performance across various metrics in different target domains.
 * The performance stays consistent across various domains, thus leading to efficient domain adaptation
 
-## RESULTS [ Inference on unseen DocLayNet Dataset ] 
+## RESULTS - Part 2 [ Inference on unseen DocLayNet Dataset using IIIT-AR-13K + RanLayNet] 
 ![Inference_2](images/Results_2.png)
 * Yolo-v8 pretrained on IIIT-AR-13K as source-dataset
 * Further fine-tuned on RanLayNet - our synthetic noisy dataset 
