@@ -22,15 +22,17 @@
 * RanLayNet's versatility enables training models for diverse layouts, effectively handling domain shifts in document structures. Models trained on RanLayNet outperform PublayNet models, showcasing robustness and adaptability to various layouts, reinforcing domain adaptation.
 
 ## METHODOLOGY FOR RANLAYNET DATASET GENERATION 
-![Nature Image](images/methodology.png)
+![Methodology](images/methodology.png)
 
 ## RESULTS [ Inference on unseen DocLayNet Dataset ] 
+![Inference_1](images/Results_1.png)
 * Yolo-v8 pretrained on PubLayNet as source-dataset
 * Further fine-tuned on RanLayNet - our synthetic noisy dataset 
 * Significantly enhances model performance across various metrics in different target domains.
 * The performance stays consistent across various domains, thus leading to efficient domain adaptation
 
 ## RESULTS [ Inference on unseen DocLayNet Dataset ] 
+![Inference_2](images/Results_2.png)
 * Yolo-v8 pretrained on IIIT-AR-13K as source-dataset
 * Further fine-tuned on RanLayNet - our synthetic noisy dataset 
 * Significantly enhances model performance across various metrics in different target domains.
