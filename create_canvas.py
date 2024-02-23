@@ -17,7 +17,7 @@ import matplotlib.pyplot as plt
 import warnings
 warnings.filterwarnings('ignore')
 
-df2 = pd.read_csv('/media/nas_mount/avinash_ocr/Rajeev/raj/avinash_sir_da/new-da-approach/RayLayNet_Dataset/raylaynet_dataframe.csv')
+df2 = pd.read_csv('raylaynet_dataframe.csv')
 
 def smart_plot(data, counter, index = []):
     df = data[:].copy(deep=True)
@@ -150,7 +150,7 @@ def bb_plot(image, label):
 
 
 def create_raylaynet_dataset(df):
-    counter = {'text':95277, 'title':45306, 'figure':23493, 'table':22146, 'list':23090}
+    counter = {'text':95227, 'title':45306, 'figure':23493, 'table':22146, 'list':23090}
     image_count = 0
 
     while True:
@@ -167,12 +167,12 @@ def create_raylaynet_dataset(df):
 
         print('{} Image Started!!'.format(image_count+1))
         image_count += 1
-        canvas_image.save('/media/nas_mount/avinash_ocr/Rajeev/raj/avinash_sir_da/new-da-approach/RayLayNet_Dataset/mohit_new_dataset/images/canvas_{}.jpg'.format(str(image_count)))
+        canvas_image.save('images/canvas_{}.jpg'.format(str(image_count)))
         
-        bounding_box_canvas = bb_plot('/media/nas_mount/avinash_ocr/Rajeev/raj/avinash_sir_da/new-da-approach/RayLayNet_Dataset/mohit_new_dataset/images/canvas_{}.jpg'.format(str(image_count)), canvas_df)
-        cv2.imwrite('/media/nas_mount/avinash_ocr/Rajeev/raj/avinash_sir_da/new-da-approach/RayLayNet_Dataset/mohit_new_dataset/images_with_bb/canvas_{}.jpg'.format(str(image_count)), bounding_box_canvas)
+        bounding_box_canvas = bb_plot('images/canvas_{}.jpg'.format(str(image_count)), canvas_df)
+        cv2.imwrite('images_with_bb/canvas_{}.jpg'.format(str(image_count)), bounding_box_canvas)
 
-        canvas_df.to_csv('/media/nas_mount/avinash_ocr/Rajeev/raj/avinash_sir_da/new-da-approach/RayLayNet_Dataset/mohit_new_dataset/labels/canvas_{}.txt'.format(str(image_count)), index=False, sep='\t')
+        canvas_df.to_csv('labels/canvas_{}.txt'.format(str(image_count)), index=False, sep='\t')
 
     print("{} Number of Canvas Created".format(str(image_count)))
 
